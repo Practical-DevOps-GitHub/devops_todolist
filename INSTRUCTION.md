@@ -10,4 +10,9 @@ Instructions:
 docker pull yurirr/todoapp:1.0.0
 ```
 
-4. Run the container in detached mode and forward ports with `docker run -d -p 8080:8000 yurirr/todoapp:1.0.0` (maps container port 8000 to host port 8080). Access the app via browser at `http://<host-ip>:8080` (ensure the port is open in firewall/security group). Useful commands: check running containers with `docker ps`, stop a container with `docker stop <container-id>`.
+3. Run the container in detached mode and forward ports with
+```bash
+docker run -d -p 8080:8000 yurirr/todoapp:1.0.0
+```
+(maps container port 8000 to host port 8080). 
+4. Access the app via browser at `http://<host-ip>:8080` (ensure the port is open in firewall/security group). Useful commands: check running containers with `docker ps`, stop a container with `docker stop <container-id>`.
