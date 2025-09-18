@@ -11,6 +11,7 @@ docker pull yurirr/todoapp:1.0.0
 ```
 
 3. Run the container in detached mode and forward ports with
+
 ```bash
 docker run -d -p 8080:8000 yurirr/todoapp:1.0.0
 ```
