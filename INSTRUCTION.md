@@ -1,1 +1,5 @@
-# Intro File 
+# TodoApp Docker Deployment
+
+Docker Hub Link: https://hub.docker.com/r/yurirr/todoapp
+
+Instructions: Make sure Docker is installed. Pull the image with `docker pull yurirr/todoapp:1.0.0`. Run the container in detached mode and forward ports with `docker run -d -p 8080:8000 yurirr/todoapp:1.0.0` (maps container port 8000 to host port 8080). Access the app via browser at `http://<host-ip>:8080` (ensure the port is open in firewall/security group). Useful commands: check running containers with `docker ps`, stop a container with `docker stop <container-id>`.
